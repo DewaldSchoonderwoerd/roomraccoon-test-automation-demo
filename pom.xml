@@ -114,7 +114,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <reportsDirectory>${reportsDir}</reportsDirectory>
-                    <suiteXmlFiles>${file}</suiteXmlFiles>
+                    <suiteXmlFiles>src/test/java/resources/WebTests.xml</suiteXmlFiles>
                     <groups>SMOKE,REGRESSION,WIP</groups>
                 </configuration>
                 <dependencies>
