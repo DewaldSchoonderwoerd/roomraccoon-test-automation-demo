@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Room Raccoon Automation Framework Web Only">
+
+    <parameter name="environment" value="QA"/>
+
+    <test name="Chrome Entries Tests">
+        <parameter name="platformType" value="WEB"/>
+        <parameter name="browserName" value="CHROME"/>
+
+        <classes>
+            <class name="com.roomraccoon.test.automation.framework.web.create.CreateNewEntryTest"/>
+            <class name="com.roomraccoon.test.automation.framework.web.complete.CompleteEntryTest"/>
+            <class name="com.roomraccoon.test.automation.framework.web.update.EditEntryTest"/>
+            <class name="com.roomraccoon.test.automation.framework.web.delete.DeleteEntryTest"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Entries Tests">
+        <parameter name="platformType" value="WEB"/>
+        <parameter name="browserName" value="FIREFOX"/>
+
+        <classes>
+            <class name="com.roomraccoon.test.automation.framework.web.create.CreateNewEntryTest"/>
+            <class name="com.roomraccoon.test.automation.framework.web.complete.CompleteEntryTest"/>
+            <class name="com.roomraccoon.test.automation.framework.web.update.EditEntryTest"/>
+            <class name="com.roomraccoon.test.automation.framework.web.delete.DeleteEntryTest"/>
+        </classes>
+    </test>
+
+</suite>
